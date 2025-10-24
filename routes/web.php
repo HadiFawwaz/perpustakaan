@@ -9,9 +9,8 @@ use App\Http\Controllers\PeminjamanController;
 // =======================
 // 🌐 HALAMAN UTAMA
 // =======================
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [App\Http\Controllers\WelcomeController::class, 'index']);
+
 
 // =======================
 // 🏠 DASHBOARD UMUM (setelah login)
